@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="9dp"
+    android:orientation="vertical"
+    tools:context="com.higglerslab.packmythings.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorSecondaryDark"
+            android:textColorHint="@color/colorSecondary"
+            app:hintTextAppearance="@style/TextLabel"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="116dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorSecondary" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/signupBtn"
+            android:layout_alignRight="@+id/signupBtn"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorSecondaryDark"
+            android:textColorHint="@color/colorSecondary"
+            app:hintTextAppearance="@style/TextLabel"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="116dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorSecondary"
+                android:textColorHint="@color/colorSecondary"
+                android:textColorLink="@color/colorSecondary" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout2"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorSecondaryDark"
+            android:textColorHint="@color/colorSecondary"
+            app:hintTextAppearance="@style/TextLabel"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="116dp">
+
+            <EditText
+                android:id="@+id/retypepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:hint="Retype Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorSecondary" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout3"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:text="SignUp"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/signupBtn">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/loginBtn"
+                android:layout_alignBottom="@+id/loginBtn"
+                android:text="Already have an account"
+                android:textColor="@color/colorSecondary" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:background="@android:color/transparent"
+                android:text="click here"
+                android:textColor="@android:color/holo_red_dark" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
